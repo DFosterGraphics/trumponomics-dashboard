@@ -1,38 +1,54 @@
 <!doctype html>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>How The Trump Economy Measures Up — David Foster Graphics</title>
 <meta name="description" content="Interactive chart pack comparing Trump-era indicators to prior presidencies.">
-<meta property="og:title" content="How The Trump Economy Measures Up">
-<meta property="og:description" content="Interactive chart pack by David Foster Graphics">
-<meta property="og:type" content="article">
-<meta property="og:image" content="https://YOUR_DOMAIN/path/preview-1200x630.jpg">
-<meta property="og:url" content="https://YOUR_MICRO_URL/">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="color-scheme" content="light">
 
 <style>
-  :root { --max:1100px; }
-  body { margin:0; font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; color:#111; }
-  .wrap { max-width:var(--max); margin:0 auto; padding:24px 16px 32px; }
-  h1 { margin:0 0 8px; font-size:clamp(28px,4vw,36px); line-height:1.12; letter-spacing:-0.01em; }
-  .deck { margin:0 18px 20px 0; color:#333; font-size:clamp(16px,2.2vw,18px); }
-  .viz { position:relative; width:100%; padding-top:62.5%; border-radius:12px; overflow:hidden; background:#f5f7fa; }
-  .viz iframe { position:absolute; inset:0; width:100%; height:100%; border:0; display:block; }
-  .credit { margin:12px 0 0; font-size:14px; color:#666; }
-  .credit a { color:#06c; text-decoration:none; border-bottom:1px solid currentColor; }
-  @media (max-width:768px){ .viz{ padding-top:75%; } } /* taller on mobile */
+  :root { --max: 1100px; }
+  body { margin: 0; font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color: #111; }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 28px 16px 40px; text-align: center; }
+  h1 {
+    margin: 0 0 10px;
+    font-weight: 750;
+    letter-spacing: -0.01em;
+    /* Big, but scales down nicely on mobile */
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.15;
+  }
+  .deck {
+    margin: 0 auto 20px;
+    max-width: 46rem;
+    color: #333;
+    font-size: clamp(17px, 2.6vw, 20px);
+  }
+  /* Optional: soft divider line */
+  .hr { width: 90px; height: 3px; background: #e5e7eb; border-radius: 2px; margin: 14px auto 20px; }
+
+  /* Viz container is full-width inside the centered wrapper */
+  .viz { margin: 0 auto; }
+  /* Full-bleed option on small screens? Uncomment if you want edge-to-edge
+  @media (max-width: 768px) {
+    .wrap { padding-left: 0; padding-right: 0; }
+    .viz { width: 100vw; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); }
+  }
+  */
+  .credit { margin: 14px 0 0; color: #666; font-size: 14px; }
+  .credit a { color: #06c; text-decoration: none; border-bottom: 1px solid currentColor; }
 </style>
 
 <div class="wrap">
   <h1>How The Trump Economy Measures Up</h1>
-  <p class="deck">Compare jobs, inflation, stocks, income, and GDP growth with prior presidencies. Use the tabs to change indicators.</p>
+  <div class="hr"></div>
+  <p class="deck">
+    Compare jobs, inflation, stocks, income, and GDP growth with prior presidencies.
+    Use the tabs to change indicators.
+  </p>
 
   <div class="viz">
-    <iframe src="https://flo.uri.sh/visualisation/24996980/embed"
-            title="Flourish chart"
-            loading="lazy"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen></iframe>
+    <!-- Flourish native embed (auto-resizes; keep the script only once per page) -->
+    <div class="flourish-embed flourish-chart" data-src="visualisation/24996980"></div>
   </div>
 
   <p class="credit">
@@ -40,3 +56,5 @@
     <a href="https://public.flourish.studio/visualisation/24996980/" target="_blank" rel="noopener">View on Flourish</a>
   </p>
 </div>
+
+<script src="https://public.flourish.studio/resources/embed.js"></script>
