@@ -1,59 +1,65 @@
 <!doctype html>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>How The Trump Economy Measures Up — David Foster Graphics</title>
-<meta name="description" content="Interactive chart pack comparing Trump-era indicators to prior presidencies.">
-<meta name="color-scheme" content="light">
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Interactive Graphics · David Foster Graphics</title>
+  <link rel="preconnect" href="https://public.flourish.studio" crossorigin>
+  <style>
+    :root{
+      --bg:#fff; --ink:#0A0A0A; --muted:#6b7280; --card:#f6f7f9; --pill:#0ea5e9;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";}
+    .wrap{max-width:1100px;margin:40px auto;padding:0 20px}
+    header{display:flex;gap:16px;align-items:center;margin-bottom:24px}
+    header img{width:40px;height:40px;object-fit:contain}
+    h1{font-size:clamp(28px,4.2vw,44px);margin:0}
+    p.deck{color:var(--muted);margin:.4rem 0 1.2rem}
+    .grid{display:grid;grid-template-columns:repeat( auto-fit, minmax(260px,1fr) );gap:16px}
+    .card{background:var(--card);border-radius:14px;padding:16px 16px 14px;border:1px solid #e6e8eb}
+    .card a{display:block;text-decoration:none;color:inherit}
+    .card h3{margin:.2rem 0 .35rem;font-size:18px}
+    .card p{margin:0;color:var(--muted);font-size:14px}
+    .pill{display:inline-block;font-size:12px;color:#fff;background:var(--pill);border-radius:999px;padding:4px 10px;margin-top:10px}
+    footer{margin:36px 0 60px;color:var(--muted);font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="assets/dfg-logo.png" alt="David Foster Graphics logo" />
+      <div>
+        <h1>Interactive Graphics</h1>
+        <p class="deck">Microsite hub for live dataviz pieces and dashboards.</p>
+      </div>
+    </header>
 
-<style>
-  :root { --max: 1100px; }
-  body { margin: 0; font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color: #111; }
-  .wrap { max-width: var(--max); margin: 0 auto; padding: 28px 16px 40px; text-align: center; }
-  h1 {
-    margin: 0 0 10px;
-    font-weight: 750;
-    letter-spacing: -0.01em;
-    /* Big, but scales down nicely on mobile */
-    font-size: clamp(32px, 5vw, 48px);
-    line-height: 1.15;
-  }
-  .deck {
-    margin: 0 auto 20px;
-    max-width: 46rem;
-    color: #333;
-    font-size: clamp(17px, 2.6vw, 20px);
-  }
-  /* Optional: soft divider line */
-  .hr { width: 90px; height: 3px; background: #e5e7eb; border-radius: 2px; margin: 14px auto 20px; }
+    <section class="grid">
+      <!-- Card 1: Trumponomics -->
+      <div class="card">
+        <a href="trumponomics/">
+          <h3>How the Trump Economy Measures Up</h3>
+          <p>Interactive dashboard comparing jobs, inflation, stocks, income, and GDP growth with prior presidencies.</p>
+          <span class="pill">Explore</span>
+        </a>
+      </div>
 
-  /* Viz container is full-width inside the centered wrapper */
-  .viz { margin: 0 auto; }
-  /* Full-bleed option on small screens? Uncomment if you want edge-to-edge
-  @media (max-width: 768px) {
-    .wrap { padding-left: 0; padding-right: 0; }
-    .viz { width: 100vw; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); }
-  }
-  */
-  .credit { margin: 14px 0 0; color: #666; font-size: 14px; }
-  .credit a { color: #06c; text-decoration: none; border-bottom: 1px solid currentColor; }
-</style>
+      <!-- Copy this block to add more projects -->
+      <!--
+      <div class="card">
+        <a href="another-project/">
+          <h3>Project Title</h3>
+          <p>One-line description of what the reader can do/learn.</p>
+          <span class="pill">Explore</span>
+        </a>
+      </div>
+      -->
+    </section>
 
-<div class="wrap">
-  <h1>How The Trump Economy Measures Up</h1>
-  <div class="hr"></div>
-  <p class="deck">
-    This chart pack shows how The Trump economy compares with that of prior presidents going back to Jimmy Carter in the 1970s, at the same point in each presidential term. Moody’s Analytics provides the data. 
-  </p>
-
-  <div class="viz">
-    <!-- Flourish native embed (auto-resizes; keep the script only once per page) -->
-    <div class="flourish-embed flourish-chart" data-src="visualisation/24996980"></div>
+    <footer>
+      © David Foster Graphics · <a href="https://davidfostergraphics.com" target="_blank" rel="noopener">Portfolio</a>
+    </footer>
   </div>
-
-  <p class="credit">
-    Reporting: Rick Newman – The Rick Report · Visuals: David Foster Graphics ·
-    <a href="https://public.flourish.studio/visualisation/24996980/" target="_blank" rel="noopener">View on Flourish</a>
-  </p>
-</div>
-
-<script src="https://public.flourish.studio/resources/embed.js"></script>
+</body>
+</html>
