@@ -1,67 +1,60 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>The Better-Off Barometer (4 Years) · David Foster Graphics</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>The Better-Off Barometer — 4 Years — David Foster Graphics</title>
+<meta name="description" content="Are we better off than four years ago? A headline barometer plus a chart pack of six economic indicators." />
+<meta name="color-scheme" content="light">
 
-  <!-- SEO / share -->
-  <meta name="description" content="Are we better off than four years ago? A single barometer plus a chart pack of six economic indicators." />
-  <meta property="og:title" content="The Better-Off Barometer (4 Years)" />
-  <meta property="og:description" content="A single headline barometer + six underlying indicators." />
-  <meta property="og:type" content="website" />
-  <!-- <meta property="og:image" content="../assets/og-better-off-4yr.png" /> -->
-  <link rel="preconnect" href="https://public.flourish.studio" crossorigin>
+<style>
+  :root { --max: 1100px; }
+  body { margin: 0; font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color: #111; }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 28px 16px 40px; text-align: center; }
+  h1 {
+    margin: 0 0 10px;
+    font-weight: 750;
+    letter-spacing: -0.01em;
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.15;
+  }
+  .deck {
+    margin: 0 auto 20px;
+    max-width: 46rem;
+    color: #333;
+    font-size: clamp(17px, 2.6vw, 20px);
+  }
+  .hr { width: 90px; height: 3px; background: #e5e7eb; border-radius: 2px; margin: 14px auto 20px; }
+  .viz { margin: 0 auto 24px; }
+  .label { margin: 18px 0 8px; color: #666; font-size: 14px; text-transform: uppercase; letter-spacing: .06em; }
+  .credit { margin: 14px 0 0; color: #666; font-size: 14px; }
+  .credit a { color: #06c; text-decoration: none; border-bottom: 1px solid currentColor; }
+</style>
 
-  <style>
-    :root { --bg:#fff; --ink:#0A0A0A; --muted:#6b7280; --card:#f6f7f9; }
-    *{box-sizing:border-box}
-    html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
-    .wrap{max-width:1100px;margin:40px auto;padding:0 20px}
-    header{margin:0 0 18px}
-    h1{font-size:clamp(28px,4.4vw,46px);margin:0 0 6px}
-    .deck{color:var(--muted);margin:0 0 20px}
-    .section{margin:26px 0 44px}
-    .label{font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin:0 0 8px}
-    .card{background:var(--card);border:1px solid #e7e9ee;border-radius:14px;padding:14px}
-    footer{margin:40px 0 70px;color:var(--muted);font-size:14px}
-    a{color:inherit}
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <header>
-      <h1>The Better-Off Barometer: 4 Years</h1>
-      <p class="deck">Are we better off than four years ago? Below is a single headline barometer, followed by a chart pack of the six economic indicators behind it.</p>
-    </header>
+<div class="wrap">
+  <h1>The Better-Off Barometer: 4 Years</h1>
+  <div class="hr"></div>
+  <p class="deck">
+    Are we better off than four years ago? A single headline barometer, followed by a chart pack of the six indicators behind it.
+  </p>
 
-    <!-- MAIN BAROMETER -->
-    <section class="section">
-      <p class="label">Barometer</p>
-      <div class="card">
-        <!-- Your 4-year barometer embed -->
-        <div class="flourish-embed flourish-gauge" data-src="visualisation/25893789?812552">
-          <script src="https://public.flourish.studio/resources/embed.js"></script>
-          <noscript><img src="https://public.flourish.studio/visualisation/25893789/thumbnail" width="100%" alt="gauge visualization" /></noscript>
-        </div>
-      </div>
-    </section>
-
-    <!-- CHART PACK (6 INDICATORS) -->
-    <section class="section">
-      <p class="label">Chart Pack · Jobs · Manufacturing · Inflation · Stocks · Income · GDP</p>
-      <div class="card">
-        <!-- Your 4-year chart pack embed -->
-        <div class="flourish-embed flourish-chart" data-src="visualisation/25898981?812552">
-          <script src="https://public.flourish.studio/resources/embed.js"></script>
-          <noscript><img src="https://public.flourish.studio/visualisation/25898981/thumbnail" width="100%" alt="chart visualization" /></noscript>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      ← <a href="../">Back to “The Work”</a> · © David Foster Graphics
-    </footer>
+  <p class="label">Barometer</p>
+  <div class="viz">
+    <!-- 4-year barometer -->
+    <div class="flourish-embed flourish-gauge" data-src="visualisation/25893789?812552"></div>
   </div>
-</body>
-</html>
+
+  <p class="label">Chart Pack · Jobs · Manufacturing · Inflation · Stocks · Income · GDP</p>
+  <div class="viz">
+    <!-- 4-year chart pack -->
+    <div class="flourish-embed flourish-chart" data-src="visualisation/25898981?812552"></div>
+  </div>
+
+  <p class="credit">
+    Visuals: David Foster Graphics ·
+    <a href="https://public.flourish.studio/visualisation/25898981/" target="_blank" rel="noopener">View chart pack on Flourish</a>
+    &nbsp;·&nbsp;
+    <a href="https://public.flourish.studio/visualisation/25893789/" target="_blank" rel="noopener">View barometer on Flourish</a>
+    <br>← <a href="../">Back to “The Work”</a>
+  </p>
+</div>
+
+<script src="https://public.flourish.studio/resources/embed.js"></script>
