@@ -4,25 +4,27 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Interactive Graphics · David Foster Graphics</title>
- <!-- Canonical -->
-<link rel="canonical" href="https://viz.davidfostergraphics.com/">
 
-<!-- Open Graph (used by LinkedIn, FB, iMessage, Slack, etc.) -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="David Foster Graphics">
-<meta property="og:title" content="Interactive Graphics · David Foster Graphics">
-<meta property="og:description" content="A clean hub for my live, interactive data visualizations and dashboards.">
-<meta property="og:url" content="https://viz.davidfostergraphics.com/">
-<meta property="og:image" content="https://viz.davidfostergraphics.com/assets/og/dfg-og.jpg?v=1">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://viz.davidfostergraphics.com/">
 
-<!-- Twitter / X -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Interactive Graphics · David Foster Graphics">
-<meta name="twitter:description" content="A clean hub for my live, interactive data visualizations and dashboards.">
-<meta name="twitter:image" content="https://viz.davidfostergraphics.com/assets/og/dfg-og.jpg?v=1">
- <link rel="preconnect" href="https://public.flourish.studio" crossorigin>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="David Foster Graphics">
+  <meta property="og:title" content="Interactive Graphics · David Foster Graphics">
+  <meta property="og:description" content="A clean hub for my live, interactive data visualizations and dashboards.">
+  <meta property="og:url" content="https://viz.davidfostergraphics.com/">
+  <meta property="og:image" content="https://viz.davidfostergraphics.com/assets/og/dfg-og.jpg?v=1">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Interactive Graphics · David Foster Graphics">
+  <meta name="twitter:description" content="A clean hub for my live, interactive data visualizations and dashboards.">
+  <meta name="twitter:image" content="https://viz.davidfostergraphics.com/assets/og/dfg-og.jpg?v=1">
+
+  <link rel="preconnect" href="https://public.flourish.studio" crossorigin>
   <style>
     :root{
       --bg:#fff; --ink:#0A0A0A; --muted:#6b7280; --card:#f6f7f9; --pill:#0ea5e9; --stroke:#e6e8eb;
@@ -51,37 +53,36 @@
     .card:hover{transform:translateY(-2px); box-shadow:0 6px 18px rgba(0,0,0,.06)}
     .card a{display:block;text-decoration:none;color:inherit}
 
-    /* Thumbnail block (replace the PNG path below) */
+    /* Thumbnail block */
     .thumb{
       width:100%;
       aspect-ratio: 16 / 9;
-      background:#e9ebef; /* fallback grey if image missing */
+      background:#e9ebef;
       display:flex; align-items:center; justify-content:center;
       overflow:hidden;
     }
     .thumb img{
       width:100%; height:100%; object-fit:cover; display:block;
     }
-
-.card-body{
-  padding:16px 18px 18px;
-  text-align:center;            /* center the text */
-}
-
-.card h3{
-  margin:.25rem 0 .5rem;
-  font-size:clamp(18px, 2.2vw, 22px);   /* bigger, responsive */
-  line-height:1.2;
-}
-
-.card p{
-  margin:0 auto;
-  color:var(--muted);
-  font-size:clamp(14px, 1.8vw, 16px);   /* bigger, responsive */
-  max-width:48ch;                       /* nicer measure on wide screens */
-}
-    .pill{display:inline-block;font-size:12px;color:#fff;background:var(--pill);
-          border-radius:999px;padding:5px 12px;margin-top:12px}
+    .card-body{
+      padding:16px 18px 18px;
+      text-align:center;
+    }
+    .card h3{
+      margin:.25rem 0 .5rem;
+      font-size:clamp(18px, 2.2vw, 22px);
+      line-height:1.2;
+    }
+    .card p{
+      margin:0 auto;
+      color:var(--muted);
+      font-size:clamp(14px, 1.8vw, 16px);
+      max-width:48ch;
+    }
+    .pill{
+      display:inline-block;font-size:12px;color:#fff;background:var(--pill);
+      border-radius:999px;padding:5px 12px;margin-top:12px
+    }
 
     footer{margin:36px 0 0;color:var(--muted);font-size:14px;text-align:center}
     footer a{color:inherit}
@@ -90,7 +91,6 @@
 <body>
   <div class="wrap">
     <header>
-      <!-- Swap to your preferred logo file; this points to your PNG right now -->
       <img src="assets/DFG%20WORDMARK%202-line%202%20K-O%20PIE_TRANSP.png" alt="David Foster Graphics logo" />
       <h1>Interactive Graphics</h1>
       <p class="deck">Microsite hub for live dataviz pieces and dashboards.</p>
@@ -101,8 +101,6 @@
       <div class="card">
         <a href="trumponomics/">
           <div class="thumb">
-            <!-- Replace this image file with a real thumbnail (PNG or JPG). 
-                 Put it at: assets/trumponomics-thumb.png -->
             <img src="assets/trumponomics-thumb.png" alt="Thumbnail: Trumponomics dashboard" />
           </div>
           <div class="card-body">
@@ -113,23 +111,33 @@
         </a>
       </div>
 
-      <!-- To add more projects:
-           1) Create a new folder at repo root, e.g. /bidenomics/ with its own index.html
-           2) Duplicate this card, update the href, title, copy, and thumbnail path -->
-      <!--
+      <!-- Card 2: Better-Off Barometer (4 Years) -->
       <div class="card">
-        <a href="another-project/">
+        <a href="better-off-barometer-4yr/">
           <div class="thumb">
-            <img src="assets/another-project-thumb.png" alt="Thumbnail: Another project" />
+            <img src="assets/bob-4yr-thumb.png" alt="Thumbnail: Better-Off Barometer — 4 Years" />
           </div>
           <div class="card-body">
-            <h3>Project Title</h3>
-            <p>One-line description of what the reader can do/learn.</p>
+            <h3>The Better-Off Barometer: 4 Years</h3>
+            <p>Are we better off than four years ago? A headline barometer plus a six-indicator chart pack.</p>
             <span class="pill">Explore</span>
           </div>
         </a>
       </div>
-      -->
+
+      <!-- Card 3: Better-Off Barometer (1 Year) -->
+      <div class="card">
+        <a href="better-off-barometer-1yr/">
+          <div class="thumb">
+            <img src="assets/bob-1yr-thumb.png" alt="Thumbnail: Better-Off Barometer — 1 Year" />
+          </div>
+          <div class="card-body">
+            <h3>The Better-Off Barometer: 1 Year</h3>
+            <p>Are we better off than last year? A headline barometer plus a six-indicator chart pack.</p>
+            <span class="pill">Explore</span>
+          </div>
+        </a>
+      </div>
     </section>
 
     <footer>
